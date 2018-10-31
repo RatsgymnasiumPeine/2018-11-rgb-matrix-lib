@@ -2,6 +2,8 @@
 #define LEDMATRIX_LIB_H
 
 #include "Arduino.h"
+#include <Adafruit_NeoPixel.h>
+#include <LedControl.h>
 
 #define MATRIX_WS2812B		0
 #define MATRIX_MAX7219		1
