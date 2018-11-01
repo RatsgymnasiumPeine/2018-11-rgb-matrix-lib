@@ -31,13 +31,13 @@ Below are some examples on how to wire each layout.
 ### LEDMatrix::LEDMatrix()
 **Command:** ```LEDMatrix::LEDMatrix(int size, int matrixChip, int matrixLayout, int[] pins)```  
 **Params:**  
-	- int _size_: the size of the matrix, e.g. 16 for a 16x16 matrix  
-	- int _matrixChip_: one of the matrix chip constants (MATRIX_MAX7219 or MATRIX_WS2812B)  
-	- int _matrixLayout_: one of the matrix layout constants (MATRIX_LAYOUT_ZIGZAG or MATRIX_LAYOUT_ROW)  
-	- int[] _pins_: the pins used to control the matrix; array length depends on used matrixChip  
+	* int _size_: the size of the matrix, e.g. 16 for a 16x16 matrix  
+	* int _matrixChip_: one of the matrix chip constants (MATRIX_MAX7219 or MATRIX_WS2812B)  
+	* int _matrixLayout_: one of the matrix layout constants (MATRIX_LAYOUT_ZIGZAG or MATRIX_LAYOUT_ROW)  
+	* int[] _pins_: the pins used to control the matrix; array length depends on used matrixChip  
 
 **Returns:**  
-   - _LEDMatrix Object_  
+	* _LEDMatrix Object_  
 
 **Description:**  
 >  Creates a new LEDMatrix object. You need to pass the matrix size, matrix chip, matrix layout and the pins on which the matrix is connected to the arduino.
@@ -47,10 +47,10 @@ Below are some examples on how to wire each layout.
 ### LEDMatrix::init()
 **Command:** ```LEDMatrix::init()```  
 **Params:**  
-	- _nothing_  
+	* _nothing_  
 
 **Returns:**  
-	- _nothing_  
+	* _nothing_  
 
 **Description:**  
 >  Initializes the pins and backend libraries. This method is required to be run in the setup() block.
@@ -58,14 +58,14 @@ Below are some examples on how to wire each layout.
 ### LEDMatrix::draw_pixel()
 **Command:** ```LEDMatrix::draw_pixel(int x, int y, int r, int g, int b)```  
 **Params:**  
-	- int _x_: X coordinate of the pixel  
-	- int _y_: Y coordinate of the pixel  
-	- int _r_: red value of the pixel  
-	- int _g_: green value of the pixel  
-	- int _b_: blue value of the pixel  
+	* int _x_: X coordinate of the pixel  
+	* int _y_: Y coordinate of the pixel  
+	* int _r_: red value of the pixel  
+	* int _g_: green value of the pixel  
+	* int _b_: blue value of the pixel  
 	
 **Returns:**  
-	- _nothing_  
+	* _nothing_  
 
 **Description:**  
 >  Draws a single pixel on the LED matrix. For B/W matrices every color value except black (0, 0, 0) is white.
@@ -74,10 +74,10 @@ Below are some examples on how to wire each layout.
 ### LEDMatrix::update()
 **Command:** ```LEDMatrix::update()```  
 **Params:**  
-	- _nothing_
+	* _nothing_
 	
 **Returns:**  
-	- _nothing_  
+	* _nothing_  
 
 **Description:**  
 >  Updates to matrix to represent the internal frame buffer. This method should be called if you want to display your changes on the matrix.
