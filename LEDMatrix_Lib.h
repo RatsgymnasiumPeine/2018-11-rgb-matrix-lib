@@ -2,8 +2,9 @@
 #define LEDMATRIX_LIB_H
 
 #include "Arduino.h"
-#include <Adafruit_NeoPixel.h>
-#include <LedControl.h>
+#include "Adafruit_NeoPixel.h"
+#include "LedControl.h"
+
 
 #define MATRIX_WS2812B		0
 #define MATRIX_MAX7219		1
@@ -16,13 +17,13 @@ class LEDMatrix{
 		int 	_size;
 		int 	_matrixChip;
 		int 	_matrixLayout;
-		int[] 	_pins;
+		int* 	_pins;
 		
-		Adafruit_NeoPixel 	_ws2812b;
-		LedControl 			_max7219;
+		Adafruit_NeoPixel* 	_ws2812b;
+		LedControl* 			_max7219;
 	
 	public:
-		LEDMatrix(int size, int matrixChip, int matrixLayout, int[] pins);
+		LEDMatrix(int size, int matrixChip, int matrixLayout, int pins[]);
 		void init();
 		void draw_pixel(int x, int y, int r, int g, int b);		
 		void update();	
