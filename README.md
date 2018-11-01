@@ -2,7 +2,7 @@
 Helper library for building LED matrices out of RGB LED Stripes or multiple LED matrix blocks.
 
 # Table of Contents
-[Matrix Styles (Chips)](matrix-styles-chips)
+[Matrix Styles (Chips)](#matrix-styles-chips)
 
 
 ## Matrix Styles (Chips)
