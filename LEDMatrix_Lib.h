@@ -13,16 +13,19 @@
 
 class LEDMatrix{
 	private:
-		int _size;
-		int _matrixChip;
-		int _matrixLayout;
-		int[] _pins;
+		int 	_size;
+		int 	_matrixChip;
+		int 	_matrixLayout;
+		int[] 	_pins;
+		
+		Adafruit_NeoPixel 	_ws2812b;
+		LedControl 			_max7219;
 	
 	public:
-		LEDMatrix(int matrixChip, int matrixLayout, int[] pins);
+		LEDMatrix(int size, int matrixChip, int matrixLayout, int[] pins);
 		void init();
-		
 		void draw_pixel(int x, int y, int r, int g, int b);		
+		void update();	
 };
 
 #endif
