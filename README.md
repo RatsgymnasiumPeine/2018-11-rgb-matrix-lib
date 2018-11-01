@@ -69,7 +69,7 @@ Below are some examples on how to wire each layout.
 
 **Description:**  
 >  Draws a single pixel on the LED matrix. For B/W matrices every color value except black (0, 0, 0) is white.
->  Note that this operation only modifies the internal buffer. It will not update the display.
+>  Note that this operation only modifies the internal buffer on ws2812b. On max7219 the change will be visible immediately
 
 ### LEDMatrix::update()
 **Command:** ```LEDMatrix::update()```  
