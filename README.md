@@ -2,7 +2,10 @@
 Helper library for building LED matrices out of RGB LED Stripes or multiple LED matrix blocks.
 
 # Table of Contents
-[Matrix Styles (Chips)](#matrix-styles-chips)
+* [Matrix Styles (Chips)](#matrix-styles-chips)
+* [Matrix Connection Layouts](#matrix-connection-layouts)
+* [Function Documentation](#function-documentation)
+
 
 
 ## Matrix Styles (Chips)
@@ -11,7 +14,7 @@ Either use MATRIX_MAX7219 or MATRIX_WS2812B as matrixChip parameters.
 
 <img src="img/Chips.svg" width="100%" />
 
-## Matrix Connection Layout
+## Matrix Connection Layouts
 You can either connect the rows of your matrix in ZIGZAG or ROW mode. Use either MATRIX_LAYOUT_ZIGZAG or MATRIX_LAYOUT_ROW as matrixLayout parameters.
 Below are some examples on how to wire each layout.
 
