@@ -54,3 +54,30 @@ Below are some examples on how to wire each layout.
 
 **Description:**  
 >  Initializes the pins and backend libraries. This method is required to be run in the setup() block.
+
+### LEDMatrix::draw_pixel()
+**Command:** ```LEDMatrix::draw_pixel(int x, int y, int r, int g, int b)```  
+**Params:**  
+	- int _x_: X coordinate of the pixel  
+	- int _y_: Y coordinate of the pixel  
+	- int _r_: red value of the pixel  
+	- int _g_: green value of the pixel  
+	- int _b_: blue value of the pixel  
+	
+**Returns:**  
+	- _nothing_  
+
+**Description:**  
+>  Draws a single pixel on the LED matrix. For B/W matrices every color value except black (0, 0, 0) is white.
+>  Note that this operation only modifies the internal buffer. It will not update the display.
+
+### LEDMatrix::update()
+**Command:** ```LEDMatrix::update()```  
+**Params:**  
+	- _nothing_
+	
+**Returns:**  
+	- _nothing_  
+
+**Description:**  
+>  Updates to matrix to represent the internal frame buffer. This method should be called if you want to display your changes on the matrix.
