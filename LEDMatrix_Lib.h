@@ -18,6 +18,8 @@ class LEDMatrix{
 		int 	_matrixChip;
 		int 	_matrixLayout;
 		int* 	_pins;
+		bool	_flipX;
+		bool	_flipY;
 		
 		Adafruit_NeoPixel* 	_ws2812b;
 		LedControl* 			_max7219;
@@ -27,6 +29,7 @@ class LEDMatrix{
 		void init();
 		void draw_pixel(int x, int y, int r, int g, int b);		
 		void update();	
+		void setFlip(bool flipX, bool flipY);
 };
 
 #endif

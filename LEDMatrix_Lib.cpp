@@ -8,6 +8,8 @@ LEDMatrix::LEDMatrix(int size, int matrixChip, int matrixLayout, int pins[]){
 	_matrixChip = matrixChip;
 	_matrixLayout = matrixLayout;
 	_pins = pins;
+	_flipX = false;
+	_flipY = false;
 }
 
 void LEDMatrix::init(){
@@ -26,6 +28,10 @@ void LEDMatrix::init(){
 }
 
 void LEDMatrix::draw_pixel(int x, int y, int r, int g, int b){
+	if(_flipX)
+		x = _size - 1 - x;
+	if(_flipY)
+		y = _size - 1 - y;
 	switch(_matrixChip){
 		case MATRIX_WS2812B:		
 			if(_matrixLayout == MATRIX_LAYOUT_ZIGZAG && y % 2 != 0){
@@ -68,4 +74,9 @@ void LEDMatrix::update(){
 		case MATRIX_MAX7219:
 			break;
 	}
+}
+
+void LEDMatrix::setFlip(bool flipX, bool flipY){
+	_flipX = flipX;
+	_flipY = flipY;
 }
