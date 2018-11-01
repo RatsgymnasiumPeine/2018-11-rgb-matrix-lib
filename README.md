@@ -30,11 +30,11 @@ Below are some examples on how to wire each layout.
 ## Function Documentation
 ### LEDMatrix::LEDMatrix()
 >  **Command:** ```LEDMatrix::LEDMatrix(int size, int matrixChip, int matrixLayout, int[] pins)```  
->  **Params:**
->		- int _size_: the size of the matrix, e.g. 16 for a 16x16 matrix
->		- int _matrixChip_: one of the matrix chip constants (MATRIX_MAX7219 or MATRIX_WS2812B) depending on the chip used
->		- int _matrixLayout_: one of the matrix layout constants (MATRIX_LAYOUT_ZIGZAG or MATRIX_LAYOUT_ROW) depending on the layout used
->		- int[] _pins_: the pins used to control the matrix; array length depends on used matrixChip
+>  **Params:**  
+>		- int _size_: the size of the matrix, e.g. 16 for a 16x16 matrix  
+>		- int _matrixChip_: one of the matrix chip constants (MATRIX_MAX7219 or MATRIX_WS2812B) depending on the chip used  
+>		- int _matrixLayout_: one of the matrix layout constants (MATRIX_LAYOUT_ZIGZAG or MATRIX_LAYOUT_ROW) depending on the layout used  
+>		- int[] _pins_: the pins used to control the matrix; array length depends on used matrixChip  
 >  **Returns:**  
 >    - _LEDMatrix Object_  
 >
@@ -45,8 +45,8 @@ Below are some examples on how to wire each layout.
 
 ### LEDMatrix::init()
 >  **Command:** ```LEDMatrix::init()```  
->  **Params:**
->		- _nothing_
+>  **Params:**  
+>		- _nothing_  
 >  **Returns:**  
 >    	- _nothing_  
 >
