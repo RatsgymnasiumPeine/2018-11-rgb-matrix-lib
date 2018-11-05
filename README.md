@@ -9,6 +9,10 @@ Helper library for building LED matrices out of RGB LED Stripes or multiple LED 
 3. [Function Documentation](#function-documentation)
 	* [LEDMatrix::LEDMatrix()](#ledmatrixledmatrix)
 	* [LEDMatrix::init()](#ledmatrixinit)
+	* [LEDMatrix::update()](#ledmatrixupdate)
+	* [LEDMatrix::draw_pixel()](#ledmatrixdrawpixel)
+	* [LEDMatrix::draw_line()](#ledmatrixdrawline)
+	* [LEDMatrix::draw_circle()](#ledmatrixdrawcircle)
 
 
 ## Matrix Styles (Chips)
